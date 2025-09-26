@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    .sidebar_params {
+      background-color: black;
+      color: white;
+      padding: 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .main-content {
+      padding: 20px;
+    }
+    .page-title {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+</style>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-2 sidebar_params">
+            <h3 class="card-title">
+                <img src="https://alphabetonline.ru/images/trafaret/v.png"
+                     class="img-thumbnail card-img-top"
+                     style="width: 30px; height: auto;"
+                     alt="Логотип">Меню
+            </h3>
+            <hr class="border-3">
+            <h4><a href="main.html">Главная</a></h4>
+            <h4><a href="category.html">Категории</a></h4>
+            <h4><a href="catalog.html">Заказы</a></h4>
+            <h4><a href="contacts.html">Контакты</a></h4>
+            <div class="dropdown mt-auto">
+                <a class="btn btn-secondary dropdown-toggle w-100" role="button"
+                   data-bs-toggle="dropdown" aria-expanded="false">
+                    Пользователь
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Профиль</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Выход</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-10 main-content">
+            <div class="text-center page-title">
+                <h1>Контакты</h1>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12 col-lg-5 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <form>
+                                <h5>Имя</h5>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Введите ваше имя">
+                                </div>
+                                <h5>Почта</h5>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">@</span>
+                                    <input type="email" class="form-control" placeholder="example@mail.com">
+                                </div>
+                                <h5>Сообщение</h5>
+                                <div class="mb-3">
+                                    <textarea class="form-control" rows="3" placeholder="Введите ваше сообщение"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-7">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Наши контакты</h3>
+                            <div class="row">
+                                <p>Текст</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
